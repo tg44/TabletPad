@@ -1,0 +1,18 @@
+﻿<Window x:Class="TabletPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TabletPad" Height="350" Width="525"
+        Icon="icon/favicon.ico">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+            
+            <Button x:Name="Connect" Click="Connect_Click" Content="Connect"/>
+            <Button x:Name="Disonnect" Click="Disonnect_Click" IsEnabled="False" Content="Disonnect"/>
+            <ListBox x:Name="LogCatBox" ScrollViewer.CanContentScroll="True"  Height="200"/>
+            <Button x:Name="UseAsMouse" Click="UseAsMouse_Click"  IsEnabled="False" Content="Use As Mouse"/>
+            <Button x:Name="StopUsingAsMouse" Click="StopUsingAsMouse_Click" IsEnabled="False" Content="Stop Using AsMouse"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
